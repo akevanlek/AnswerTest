@@ -11,7 +11,7 @@ namespace Q2Test
     public class CalulateOrderTest
     {
         [Fact]
-        public void CalulateOrder()
+        public void CalulateOrderSuccess()
         {
             Order inputOrder = new Order()
             {               

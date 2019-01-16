@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      คำนวน อัตราดอกเบี้ยการกู้ยืมเงิน
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-list>  
+   
+        <ion-item>
+          <ion-label> จำนวนเงินที่ต้องการกู้</ion-label>
+          <ion-input type="name" [(ngModel)]="principleinput"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label> จำนวนปีที่ต้องการกู้</ion-label>
+          <ion-input type="name" [(ngModel)]="yearinput"></ion-input>
+        </ion-item>
+        <ion-item>
+          <button ion-button (click)="loan()">คำนวนการกู้ยืม</button>
+        </ion-item>
+    </ion-list>
+
+    <ion-item *ngFor="let item of loans">
+        <ion-row>
+          <ion-col col-md-1>
+            ปีที่ {{ item.year }} :  คงค้าง : {{ item.principle }}  ดอกเบี้ย : {{ item.totalInterest }} = {{ item.principle }} x {{item.interest}} / 100  ยอดที่ต้องชำระ : {{ item.payPerYear }}
+          </ion-col> 
+        </ion-row>
+      </ion-item>
+</ion-content>

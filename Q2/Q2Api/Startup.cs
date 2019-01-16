@@ -15,7 +15,7 @@ namespace Q2Api
 {
     public class Startup
     {
-        private string _swaggerVersion = "v0.7";
+        private string _swaggerVersion = "v0.8";
         private string _swaggerApiName = "AkeQ2 Client API";
 
         public Startup(IConfiguration configuration)
