@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>การจัดการคลังสินค้า</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<h1> เพิ่มรายการสินค้า </h1>
+  <ion-list>     
+    <ion-item>
+      <ion-label> ชื่อ</ion-label>
+      <ion-input type="name" [(ngModel)]="nameinput"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label> ราคา</ion-label>
+      <ion-input type="name" [(ngModel)]="priceinput"></ion-input>
+    </ion-item>
+    <ion-item>
+      <button ion-button (click)="addproduct()">เพิ่มรายการ</button>
+    </ion-item>
+</ion-list>
+<h1> รายการสินค้า </h1>
+<ion-item *ngFor="let item of products">
+  <ion-row>
+    <ion-col col-md-5>
+      ชื่อ สินค้า : {{ item.name }} 
+    </ion-col> 
+    <ion-col col-md-5>
+      ราคา : {{ item.price }} 
+    </ion-col> 
+    
+  </ion-row>
+</ion-item>
+
+</ion-content>

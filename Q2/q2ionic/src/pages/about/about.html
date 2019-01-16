@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <h1> ตะกร้าสินค้า </h1>
+   <ion-list>   
+        <ion-item *ngFor="let p of myorder.products">
+            <ion-row>
+              <ion-col col-md-3>
+                ชื่อ สินค้า : {{ p.product.name }} 
+              </ion-col> 
+              <ion-col col-md-3>
+                ราคา : {{ p.product.price }} 
+              </ion-col>  
+              <ion-col col-md-3>
+               จำนวน : {{ p.quantity }} 
+              </ion-col>  
+            </ion-row>
+          </ion-item>
+        <ion-item>
+          <ion-label> ราคารวม : {{myorder.totalPrice}}</ion-label>        
+        </ion-item>
+        <ion-item>
+          <ion-label> ส่วนลด : {{myorder.discount}}</ion-label>        
+        </ion-item>
+        <ion-item>
+          <ion-label> ราคาที่ต้องชำระ : {{myorder.checkOutPrice}}</ion-label>        
+        </ion-item>   
+    </ion-list>
+
+  <h1> รายการสินค้า </h1>
+  <ion-item *ngFor="let item of products">
+    <ion-row>
+      <ion-col col-md-5>
+        ชื่อ สินค้า : {{ item.name }} 
+      </ion-col> 
+      <ion-col col-md-5>
+        ราคา : {{ item.price }} 
+      </ion-col> 
+      <ion-col col-md-2>
+          <button ion-button (click)="addtocart(item.id)">Add to cart</button>
+      </ion-col> 
+     
+    </ion-row>
+  </ion-item>
+
+</ion-content>

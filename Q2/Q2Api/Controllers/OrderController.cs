@@ -31,7 +31,7 @@ namespace Q2Api.Controllers
             return userOrder;
         }
 
-        [HttpPost("{productId}")]
+        [HttpPost("AddOrder/{productId}")]
         public Order AddOrder(string productId)
         {
             var product = storeProducts.Where(x => x.Id == productId)?.FirstOrDefault();
@@ -62,7 +62,10 @@ namespace Q2Api.Controllers
             {
                 throw new Exception("ข้อมูลผิดพลาด");
             }
+           
             newProduct.Id = Guid.NewGuid().ToString();
+            newProduct.Is3Free1 = true;
+
             storeProducts.Add(newProduct);
             return storeProducts;
         }
