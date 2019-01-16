@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Q2Api", "Q2Api\Q2Api.csproj", "{7271F958-986B-4F11-BB30-A93FABBBB9E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Q2Test", "Q2Test\Q2Test.csproj", "{AE2C0EB1-41CC-45A6-8472-A3C0EDD87F41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7271F958-986B-4F11-BB30-A93FABBBB9E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7271F958-986B-4F11-BB30-A93FABBBB9E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7271F958-986B-4F11-BB30-A93FABBBB9E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7271F958-986B-4F11-BB30-A93FABBBB9E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE2C0EB1-41CC-45A6-8472-A3C0EDD87F41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE2C0EB1-41CC-45A6-8472-A3C0EDD87F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE2C0EB1-41CC-45A6-8472-A3C0EDD87F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE2C0EB1-41CC-45A6-8472-A3C0EDD87F41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA99258A-4AF1-4090-ADC2-4B6389DB8BF1}
+	EndGlobalSection
+EndGlobal
