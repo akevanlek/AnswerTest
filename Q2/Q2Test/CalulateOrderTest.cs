@@ -14,8 +14,7 @@ namespace Q2Test
         public void CalulateOrder()
         {
             Order inputOrder = new Order()
-            {
-                Id = "order01",
+            {               
                 Products = new List<ProductOrder>() {
                      new ProductOrder{
                         Product = new Product
@@ -57,8 +56,7 @@ namespace Q2Test
             var result = cal.CalulateOrder(inputOrder);
 
             Order expectedOrder = new Order()
-            {
-                Id = "order01",
+            {            
                 Products = new List<ProductOrder>() {
                      new ProductOrder{
                         Product = new Product
