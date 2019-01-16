@@ -1,0 +1,10 @@
+﻿โจทย์ ข้อที่ 1  อยู่ใน folder Q1
+Q1
+ -ui q1ionic
+ -api Q1Api ของที่ใช้คำนวน ดอกเบี้ย อยู่ Q1Cal.cs
+ -test Q1Test เทส การคำนวนของ Q1Cal.cs
+โจทย์ ข้อที่ 2  อยู่ใน folder Q2
+Q2
+ -ui q2ionic
+ -api Q2Api ของที่ใช้คำนวน ดอกเบี้ย อยู่ Q2Cal.cs
+ -test Q2Test เทส การคำนวนของ Q2Cal.cs
