@@ -6,18 +6,16 @@
 
 <ion-content padding>
   <ion-list>  
-   
+      <h1> ====================กำหนดอัตราดอกเบี้ย========================</h1>
     <ion-item>
-      <ion-label> กำหนดอัตราดอกเบี้ยใหม่</ion-label>
       <ion-input type="name" [(ngModel)]="input"></ion-input>
     </ion-item>
    
     <ion-item>
       <button ion-button (click)="setinterest()">ตั้งค่า</button>
     </ion-item>
-    <ion-item>
-      <ion-label> ==================== อัตราดอกเบี้ย ปัจจุบัน ========================</ion-label>
-    </ion-item> 
+<h1> ==================== อัตราดอกเบี้ย ปัจจุบัน ========================</h1>
+ 
     <ion-item>
       <ion-label >อัตราดอกเบี้ยต่อปี</ion-label>
       <ion-label> {{ interest }}</ion-label>
