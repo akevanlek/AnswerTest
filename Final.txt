@@ -21,3 +21,6 @@ Q2
    - Naming
  API: 20
  Test: 10
+ Total: 54
+ 
+ All: 77
