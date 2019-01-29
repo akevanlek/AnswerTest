@@ -8,3 +8,16 @@ Q2
  -ui q2ionic
  -api Q2Api ของที่ใช้คำนวน ดอกเบี้ย อยู่ Q2Cal.cs
  -test Q2Test เทส การคำนวนของ Q2Cal.cs
+ 
+ Q1 Score
+ App: 10 - 2 = 8
+   - UI + Naming
+ API: 10 
+ Test: 5
+ Total: 23
+ 
+ Q2 Score
+ App: 25 - 1 = 24 
+   - Naming
+ API: 20
+ Test: 10
